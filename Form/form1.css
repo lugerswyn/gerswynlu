@@ -1,0 +1,14 @@
+.standard{
+    padding: 15px;
+    width: 400px;
+}
+
+.pd {
+    padding: 5px;
+    width: 600px; 
+    display: inline-block;
+
+}
+.boxboy{
+  align-content: center;
+}

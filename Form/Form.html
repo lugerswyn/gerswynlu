@@ -1,0 +1,77 @@
+<html>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>Event Form Validation</title>
+        <link rel="stylesheet" href="form1.css">
+        <script src = "form2.js"></script>
+    </head>
+<body>
+
+<form>
+		<fieldset><div class = "Boy">
+            <legend>Event creator</legend>
+            <div class = "standard">
+			<label for ="EType">Event type:</label>
+            <select id="Event type:">
+                <option value="pick">Pick One</option>
+                <option value="Gath">Gathering</option>
+                <option value="pparty">Party</option>
+                <option value="sem">Seminar</option>
+                <option value="foru">Forum</option>
+                <option value="train">Training</option>
+              </select>
+            </div>
+
+            <div class = "standard">
+			<label for ="EvT">EventTitle:</label>
+            <input type = "text" name = "title" id = "Etitle" required>
+            </div>
+ 
+            <div class = "standard">
+			<label for ="EventDates">Event Dates:</label>
+            <input type = "date" name = "dateF" id = "EdatesF" required> to 
+            <input type = "date" name = "dateE2" id = "Edatese2" required>
+            </div>
+
+            <div class = "standard">
+			<label for ="PostingDate">Posting Date:</label>
+            <input type = "date" name = "date" id = "PD" required>
+            </div>
+        
+        
+
+
+        <div class = "standard">
+		<input type="checkbox" id="require" name="Req"/>
+        <label for = "require">Is Registration Requred</label><br>
+        </div>
+
+        <div class = "standard">
+        <input type="checkbox" id="Fam" name="F"/>
+        <label for = "Fam">Is this event associated with any Family Programs?</label><br>
+        </div>
+
+        <div class = "pd">
+        <input type="checkbox" id="Mail" name="M"/>
+        <label for = "Mail">Upon Registration Completion, Are users to recieve an Auto-generated Email?</label><br>
+        </div>
+
+        <div class = "standard">
+        <input type="checkbox" id="Cont" name="C"/>
+        <label for = "Cont">Is there a point of contact?</label><br>
+        </div>   
+
+        <div class = "standard">
+        <input type="checkbox" id="HPoint" name="HP"/>
+        <label for = "HPoint">Is there a Hosting Command Point of Contact?</label><br>
+        </div>	
+
+        <button onclick ="sReq(), valiDate()">Send</button>
+        
+        <button onclick ="redo()">Reset</button>
+    </fieldset></div>
+			
+        </form>
+ </body>
+ </html>
